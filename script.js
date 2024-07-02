@@ -110,17 +110,58 @@
 
 // Suppose I want to define a function that removes the last element of an array each time I call it, but does not mutate the original array. Fix the code so that the results are no longer mutating the array.
 
-function minusOne(arr) {
-  arr.splice(4);
-  return arr
+// function minusOne(arr) {
+//   arr.splice(4);
+//   return arr
+// }
+
+// x = [1, 2, 3, 4, 5];
+// console.log(minusOne(x));   // ➞ [1, 2, 3, 4]  // 1st time function is called.
+// console.log(minusOne(x));   //➞  [1, 2, 3, 4]  // 2nd time function is called.
+// console.log(minusOne(x));   //➞  [1, 2, 3, 4]  // 3rd time function is called.
+// console.log(minusOne(x));   //➞  [1, 2, 3, 4]  // 4th time function is called.
+
+
+
+
+
+//Create a function that takes an array containing only numbers and return the first element.
+
+// function getFirstValue(arr){
+//     return arr[0];
+// }
+
+// console.log(getFirstValue([1, 2, 3]) );      //➞ 1
+// console.log(getFirstValue([80, 5, 100]) );   // ➞ 80
+// console.log(getFirstValue([-500, 0, 50]) );  // ➞ -500
+
+
+
+
+
+// Given two arguments, return an array which contains these two arguments.
+
+// function makePair(num1, num2) {
+//   return [num1,num2];
+// }
+
+// console.log(makePair(1, 2));           // ➞ [1, 2]
+// console.log(makePair(51, 21));         // ➞ [51, 21]
+// console.log(makePair(512124, 215));    // ➞ [512124, 215]
+
+
+
+
+
+
+// According to the lodash documentation, _.drop creates a slice of an array with n elements dropped from the beginning.Your challenge is to write your own version using vanilla JavaScript.
+
+function drop(arr, val = 1) {
+	  return arr.slice(val)
+  
 }
 
-x = [1, 2, 3, 4, 5];
-console.log(minusOne(x));   // ➞ [1, 2, 3, 4]  // 1st time function is called.
-console.log(minusOne(x));   //➞  [1, 2, 3, 4]  // 2nd time function is called.
-console.log(minusOne(x));   //➞  [1, 2, 3, 4]  // 3rd time function is called.
-console.log(minusOne(x));   //➞  [1, 2, 3, 4]  // 4th time function is called.
-
-
-
-
+console.log(drop([1, 2, 3], 1));   //➞ [2, 3]
+console.log(drop([1, 2, 3], 2));   //➞ [3]
+console.log(drop([1, 2, 3], 5));   //➞ []
+console.log(drop([1, 2, 3], 0));   // ➞ [1, 2, 3]

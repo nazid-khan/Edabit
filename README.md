@@ -21,7 +21,7 @@ it's for everyone whose try to find the solution
 ## Topics
 
 - Array
-  - (splice,slice)
+
 
 
 ## Lessons Learned
