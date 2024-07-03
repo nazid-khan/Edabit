@@ -27,4 +27,4 @@ it's for everyone whose try to find the solution
 ## Lessons Learned
 
 I Learned alot about logic building from this by solving questions.
-The more I solved the question the more taught how things works actually. 
+The more I solved the questions the more I learned how things work. 
