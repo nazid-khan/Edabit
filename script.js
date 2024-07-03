@@ -156,12 +156,54 @@
 
 // According to the lodash documentation, _.drop creates a slice of an array with n elements dropped from the beginning.Your challenge is to write your own version using vanilla JavaScript.
 
-function drop(arr, val = 1) {
-	  return arr.slice(val)
+// function drop(arr, val = 1) {
+// 	  return arr.slice(val)
   
+// }
+
+// console.log(drop([1, 2, 3], 1));   //➞ [2, 3]
+// console.log(drop([1, 2, 3], 2));   //➞ [3]
+// console.log(drop([1, 2, 3], 5));   //➞ []
+// console.log(drop([1, 2, 3], 0));   // ➞ [1, 2, 3]
+
+
+
+
+
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+
+function getVoteCount(votes) {
+	return votes.upvotes - votes.downvotes;
 }
 
-console.log(drop([1, 2, 3], 1));   //➞ [2, 3]
-console.log(drop([1, 2, 3], 2));   //➞ [3]
-console.log(drop([1, 2, 3], 5));   //➞ []
-console.log(drop([1, 2, 3], 0));   // ➞ [1, 2, 3]
+console.log(getVoteCount({ upvotes: 13, downvotes: 0 }));      //➞ 13
+console.log(getVoteCount({ upvotes: 2, downvotes: 33 }));      //➞ -31
+console.log(getVoteCount({ upvotes: 132, downvotes: 132 }));   // ➞ 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
