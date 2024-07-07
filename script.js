@@ -241,30 +241,47 @@
 
 
 
-// Create a function that accepts an array and returns the last item in the array.
+// // Create a function that accepts an array and returns the last item in the array.
 
-function getLastItem(arr) {
-	// return arr[2]
-	
-	if (arr.length > 0){
-		return arr[arr.length-1]
-	}
-	else{
-		return undefined
-	}
+// function getLastItem(arr) {
+// 	// return arr[2]
+
+// 	if (arr.length > 0){
+// 		return arr[arr.length-1]
+// 	}
+// 	else{
+// 		return undefined
+// 	}
+// }
+
+// console.log(getLastItem([1, 2, 3]));                  //➞ 3
+// console.log(getLastItem(["cat", "dog", "duck"]));    //➞ "duck"
+// console.log(getLastItem([true, false, true]));       //➞ true
+
+
+
+
+
+
+
+// Create a function that takes an array of numbers or letters and returns a string.
+
+function arrayToString(arr) {
+    // Initialize an empty string to accumulate results
+    let result = "";
+    
+    // Iterate through each element of the array
+    for (let element of arr) {
+        // Convert each element to string and concatenate to result
+        result += String(element);
+    }
+    
+    // Return the final accumulated string
+    return result;
 }
-
-console.log(getLastItem([1, 2, 3]));                  //➞ 3
-console.log(getLastItem(["cat", "dog", "duck"]));    //➞ "duck"
-console.log(getLastItem([true, false, true]));       //➞ true
-
-
-
-
-
-
-
-
+console.log(arrayToString([1, 2, 3, 4, 5, 6]));                 //➞ "123456"
+console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));     //➞ "abcdef"
+console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"]));       //➞ "123asdAAAA"
 
 
 
