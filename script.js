@@ -241,5 +241,46 @@
 
 
 
+// Create a function that accepts an array and returns the last item in the array.
+
+function getLastItem(arr) {
+	// return arr[2]
+	
+	if (arr.length > 0){
+		return arr[arr.length-1]
+	}
+	else{
+		return undefined
+	}
+}
+
+console.log(getLastItem([1, 2, 3]));                  //➞ 3
+console.log(getLastItem(["cat", "dog", "duck"]));    //➞ "duck"
+console.log(getLastItem([true, false, true]));       //➞ true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
