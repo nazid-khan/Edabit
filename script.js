@@ -200,21 +200,39 @@
 
 // Help fix all the bugs in the function incrementItems! It is intended to add 1 to every element in the array!
 
-function incrementItems(arr) {
-	for(let i = 0; i < arr.length; i++)
-		arr[i] = arr[i] + 1
-	return arr
-}
+// function incrementItems(arr) {
+// 	for(let i = 0; i < arr.length; i++)
+// 		arr[i] = arr[i] + 1
+// 	return arr
+// }
 
-console.log(incrementItems([0, 1, 2, 3]));        // ➞ [1, 2, 3, 4]
-console.log(incrementItems([2, 4, 6, 8]));        // ➞ [3, 5, 7, 9]
-console.log(incrementItems([-1, -2, -3, -4]));    //➞ [0, -1, -2, -3]
-
-
+// console.log(incrementItems([0, 1, 2, 3]));        // ➞ [1, 2, 3, 4]
+// console.log(incrementItems([2, 4, 6, 8]));        // ➞ [3, 5, 7, 9]
+// console.log(incrementItems([-1, -2, -3, -4]));    //➞ [0, -1, -2, -3]
 
 
 
 
+
+// // You can assign variables from arrays like this:
+
+// const arr = [1, 2, 3, 4, 5, 6]
+
+// // simple assignment
+
+// let a = arr[0]
+// let b = arr[1]
+
+// // destructuring assignment
+// let [c,d] = arr;
+
+// console.log(a) // outputs 1
+// console.log(b) // outputs 2
+
+// console.log(c) // outputs 1
+// console.log(d) // outputs 2
+
+// // With ES6, you can assign variables from arrays in a much more succinct way. Create variables a and b from the given array using the ES6 destructuring assignment syntax, where a === 1 and b === 2.
 
 
 
