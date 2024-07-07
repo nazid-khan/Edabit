@@ -289,15 +289,46 @@
 
 
 
-// Create a function to concatenate two integer arrays.
+// // Create a function to concatenate two integer arrays.
 
-function concat(arr1, arr2) {
-	return arr1 + "," + arr2
+// function concat(arr1, arr2) {
+// 	return arr1 + "," + arr2
+// }
+
+// console.log(concat([1, 3, 5], [2, 6, 8]));         //➞ [1, 3, 5, 2, 6, 8]
+// console.log(concat([7, 8], [10, 9, 1, 1, 2]));     //➞ [7, 8, 10, 9, 1, 1, 2]
+// console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));   //➞ [4, 5, 1, 3, 3, 3, 3, 3]
+
+
+
+
+
+
+
+// Create a function that takes an array and a string as arguments and returns the index of the string.
+
+function findIndex( arr, find ){
+	return arr.indexOf(find) 
 }
 
-console.log(concat([1, 3, 5], [2, 6, 8]));         //➞ [1, 3, 5, 2, 6, 8]
-console.log(concat([7, 8], [10, 9, 1, 1, 2]));     //➞ [7, 8, 10, 9, 1, 1, 2]
-console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));   //➞ [4, 5, 1, 3, 3, 3, 3, 3]
+console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh"));                    //➞ 2
+console.log(findIndex(["Red", "blue", "Blue", "Green"], "blue"));                 //➞ 1
+console.log(findIndex(["a", "g", "y", "d"], "d"));                                //➞ 3
+console.log(findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple"));   //➞ 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
