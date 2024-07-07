@@ -338,23 +338,35 @@
 
 
 
-// Create a function that finds the index of a given item.
+// // Create a function that finds the index of a given item.
 
-function search(arr, item) {
-	return arr.indexOf(item)
+// function search(arr, item) {
+// 	return arr.indexOf(item)
+// }
+
+// console.log(search([1, 5, 3], 5)); //➞ 1
+// console.log(search([9, 8, 3], 3)); //➞ 2
+// console.log(search([1, 2, 3], 4)); //➞ -1
+
+
+
+
+
+
+
+// Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
+
+function sumArray(arr) {
+	let sum  = 0; 	
+	for (i = 0; i < arr.length; i++) {
+		sum += arr[i]
+	}
+	return sum
 }
 
-console.log(search([1, 5, 3], 5)); //➞ 1
-console.log(search([9, 8, 3], 3)); //➞ 2
-console.log(search([1, 2, 3], 4)); //➞ -1
-
-
-
-
-
-
-
-
+console.log(sumArray([1, 2, 3, 4, 5]));    //➞ 15
+console.log(sumArray([-1, 0, 1]));         //➞ 0
+console.log(sumArray([0, 4, 8, 12]));      //➞ 24
 
 
 
