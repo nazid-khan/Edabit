@@ -264,32 +264,40 @@
 
 
 
-// Create a function that takes an array of numbers or letters and returns a string.
+// // Create a function that takes an array of numbers or letters and returns a string.
 
-function arrayToString(arr) {
-    // Initialize an empty string to accumulate results
-    let result = "";
+// function arrayToString(arr) {
+//     // Initialize an empty string to accumulate results
+//     let result = "";
     
-    // Iterate through each element of the array
-    for (let element of arr) {
-        // Convert each element to string and concatenate to result
-        result += String(element);
-    }
+//     // Iterate through each element of the array
+//     for (let element of arr) {
+//         // Convert each element to string and concatenate to result
+//         result += String(element);
+//     }
     
-    // Return the final accumulated string
-    return result;
+//     // Return the final accumulated string
+//     return result;
+// }
+// console.log(arrayToString([1, 2, 3, 4, 5, 6]));                 //➞ "123456"
+// console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));     //➞ "abcdef"
+// console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"]));       //➞ "123asdAAAA"
+
+
+
+
+
+
+
+// Create a function to concatenate two integer arrays.
+
+function concat(arr1, arr2) {
+	return arr1 + "," + arr2
 }
-console.log(arrayToString([1, 2, 3, 4, 5, 6]));                 //➞ "123456"
-console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));     //➞ "abcdef"
-console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"]));       //➞ "123asdAAAA"
 
-
-
-
-
-
-
-
+console.log(concat([1, 3, 5], [2, 6, 8]));         //➞ [1, 3, 5, 2, 6, 8]
+console.log(concat([7, 8], [10, 9, 1, 1, 2]));     //➞ [7, 8, 10, 9, 1, 1, 2]
+console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));   //➞ [4, 5, 1, 3, 3, 3, 3, 3]
 
 
 
