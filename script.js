@@ -441,40 +441,49 @@
 
 
 
-// Given two arrays, which represent two sandwiches, return whether both sandwiches use the same type of bread. The bread will always be found at the start and end of the array.
+// // Given two arrays, which represent two sandwiches, return whether both sandwiches use the same type of bread. The bread will always be found at the start and end of the array.
 
-function hasSameBread(arr1, arr2) {
-	if( arr1[0] == arr2[0] ){
-		return true
-	}
-	else{
-		return false
-	}
+// function hasSameBread(arr1, arr2) {
+// 	if( arr1[0] == arr2[0] ){
+// 		return true
+// 	}
+// 	else{
+// 		return false
+// 	}
+// }
+
+// console.log(hasSameBread(
+//   ["white bread", "lettuce", "white bread"],
+//   ["white bread", "tomato", "white bread"]
+// )); //➞ true
+
+// console.log(hasSameBread(
+//   ["brown bread", "chicken", "brown bread"],
+//   ["white bread", "chicken", "white bread"]
+// )); //➞ false
+
+// console.log(hasSameBread(
+//   ["toast", "cheese", "toast"],
+//   ["brown bread", "cheese", "toast"]
+// )); //➞ false
+
+
+
+
+
+
+
+
+// Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
+
+function parseArray(arr) {
+	
 }
 
-console.log(hasSameBread(
-  ["white bread", "lettuce", "white bread"],
-  ["white bread", "tomato", "white bread"]
-)); //➞ true
-
-console.log(hasSameBread(
-  ["brown bread", "chicken", "brown bread"],
-  ["white bread", "chicken", "white bread"]
-)); //➞ false
-
-console.log(hasSameBread(
-  ["toast", "cheese", "toast"],
-  ["brown bread", "cheese", "toast"]
-)); //➞ false
-
-
-
-
-
-
-
-
-
+console.log(parseArray([1, 2, "a", "b"]));                  //➞ ["1", "2", "a", "b"]
+console.log(parseArray(["abc", 123, "def", 456]));          //➞ ["abc", "123", "def", "456"]
+console.log(parseArray([1, 2, 3, 17, 24, 3, "a", "123b"])); //➞ ["1", "2", "3", "17", "24", "3", "a", "123b"]
+console.log(parseArray([]));                                //➞ []
 
 
 
