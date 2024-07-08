@@ -477,7 +477,7 @@
 // Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
 
 function parseArray(arr) {
-	
+    return arr.map(elem => typeof elem === "number" ? String(elem) : elem);
 }
 
 console.log(parseArray([1, 2, "a", "b"]));                  //➞ ["1", "2", "a", "b"]
