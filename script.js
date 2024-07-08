@@ -374,22 +374,31 @@
 
 
 
-// Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
+// // Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
 
-function search(arr, item) {
-	return arr.indexOf(item)
+// function search(arr, item) {
+// 	return arr.indexOf(item)
+// }
+
+// console.log(search([1, 2, 3, 4], 3)); //➞ 2
+// console.log(search([2, 4, 6, 8, 10], 8)); //➞ 3
+
+
+
+
+
+
+
+// Write a function to check if an array contains a particular number.
+
+function check(arr, el) {
+	return arr.includes(el)
 }
 
-console.log(search([1, 2, 3, 4], 3)); //➞ 2
-console.log(search([2, 4, 6, 8, 10], 8)); //➞ 3
-
-
-
-
-
-
-
-
+console.log(check([1, 2, 3, 4, 5], 3)); //➞ true
+console.log(check([1, 1, 2, 1, 1], 3)); //➞ false
+console.log(check([5, 5, 5, 6], 5)); //➞ true
+console.log(check([], 5)); //➞ false
 
 
 
