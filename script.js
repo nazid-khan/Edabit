@@ -389,18 +389,32 @@
 
 
 
-// Write a function to check if an array contains a particular number.
+// // Write a function to check if an array contains a particular number.
 
-function check(arr, el) {
-	return arr.includes(el)
-}
+// function check(arr, el) {
+// 	return arr.includes(el)
+// }
 
-console.log(check([1, 2, 3, 4, 5], 3)); //➞ true
-console.log(check([1, 1, 2, 1, 1], 3)); //➞ false
-console.log(check([5, 5, 5, 6], 5)); //➞ true
-console.log(check([], 5)); //➞ false
+// console.log(check([1, 2, 3, 4, 5], 3)); //➞ true
+// console.log(check([1, 1, 2, 1, 1], 3)); //➞ false
+// console.log(check([5, 5, 5, 6], 5)); //➞ true
+// console.log(check([], 5)); //➞ false
 
 
+
+
+
+
+
+// Create a function that takes two numbers num1, num2, and an array arr and returns an array containing all the numbers in arr greater than num1 and less than num2.
+
+function arrBetween(num1, num2, arr) {
+	return arr.filter(number => number > num1 && number < num2);
+  }
+
+console.log(arrBetween(3, 8, [1, 5, 95, 0, 4, 7]));      //➞ [5, 4, 7]
+console.log(arrBetween(1, 10, [1, 10, 25, 8, 11, 6]));   //➞ [8, 6]
+console.log(arrBetween(7, 32, [1, 2, 3, 78]));           //➞ []
 
 
 
