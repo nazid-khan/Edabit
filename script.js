@@ -354,26 +354,34 @@
 
 
 
-// Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
+// // Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
 
-function sumArray(arr) {
-	let sum  = 0; 	
-	for (i = 0; i < arr.length; i++) {
-		sum += arr[i]
-	}
-	return sum
+// function sumArray(arr) {
+// 	let sum  = 0; 	
+// 	for (i = 0; i < arr.length; i++) {
+// 		sum += arr[i]
+// 	}
+// 	return sum
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5]));    //➞ 15
+// console.log(sumArray([-1, 0, 1]));         //➞ 0
+// console.log(sumArray([0, 4, 8, 12]));      //➞ 24
+
+
+
+
+
+
+
+// Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
+
+function search(arr, item) {
+	return arr.indexOf(item)
 }
 
-console.log(sumArray([1, 2, 3, 4, 5]));    //➞ 15
-console.log(sumArray([-1, 0, 1]));         //➞ 0
-console.log(sumArray([0, 4, 8, 12]));      //➞ 24
-
-
-
-
-
-
-
+console.log(search([1, 2, 3, 4], 3)); //➞ 2
+console.log(search([2, 4, 6, 8, 10], 8)); //➞ 3
 
 
 
