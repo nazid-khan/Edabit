@@ -530,16 +530,31 @@
 
 
 
-// Create a function that takes as a parameter an array of "stringified" numbers and returns an array of numbers.
-//["1", "3", "3.6"] ➞ [1, 3, 3.6]
+// // Create a function that takes as a parameter an array of "stringified" numbers and returns an array of numbers.
+// //["1", "3", "3.6"] ➞ [1, 3, 3.6]
 
-function toNumberArray(arr) {
-	return arr.map(Number);
+// function toNumberArray(arr) {
+// 	return arr.map(Number);
+// }
+
+// console.log(toNumberArray(["9.4", "4.2"]));   //➞ [9.4, 4.2]
+// console.log(toNumberArray(["91", "44"]));     //➞ [91, 44]
+// console.log(toNumberArray(["9.5", "8.8"]));   //➞ [9.5, 8.8]
+
+
+
+
+
+// Create a function that takes an array of two numbers and checks if the square root of the first number is equal to the cube root of the second number.
+
+function checkSquareAndCube(arr) {
+    return Math.sqrt(arr[0]) === Math.cbrt(arr[1]);
 }
 
-console.log(toNumberArray(["9.4", "4.2"]));   //➞ [9.4, 4.2]
-console.log(toNumberArray(["91", "44"]));     //➞ [91, 44]
-console.log(toNumberArray(["9.5", "8.8"]));   //➞ [9.5, 8.8]
+console.log(checkSquareAndCube([4, 8])); //➞ true
+console.log(checkSquareAndCube([16, 48])); //➞ false
+console.log(checkSquareAndCube([9, 27])); //➞ true
+
 
 
 
