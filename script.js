@@ -474,24 +474,39 @@
 
 
 
-// Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
+// // Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
 
-function parseArray(arr) {
-    return arr.map(elem => typeof elem === "number" ? String(elem) : elem);
+// function parseArray(arr) {
+//     return arr.map( elem => typeof elem === "number" ? String(elem) : elem );
+// }
+
+// console.log( parseArray([1, 2, "a", "b"]));                   //➞ ["1", "2", "a", "b"]
+// console.log( parseArray(["abc", 123, "def", 456]));           //➞ ["abc", "123", "def", "456"]
+// console.log( parseArray([1, 2, 3, 17, 24, 3, "a", "123b"]));  //➞ ["1", "2", "3", "17", "24", "3", "a", "123b"]
+// console.log( parseArray([]));                                 //➞ []
+
+
+
+
+
+
+
+// Create a function that takes an array and returns the types of values (data types) in a new array.
+
+function arrayValuesTypes(arr) {
+	let typeOfArray = typeof(arr);
+    return typeOfArray
+    
 }
 
-console.log(parseArray([1, 2, "a", "b"]));                  //➞ ["1", "2", "a", "b"]
-console.log(parseArray(["abc", 123, "def", 456]));          //➞ ["abc", "123", "def", "456"]
-console.log(parseArray([1, 2, 3, 17, 24, 3, "a", "123b"])); //➞ ["1", "2", "3", "17", "24", "3", "a", "123b"]
-console.log(parseArray([]));                                //➞ []
+console.log(arrayValuesTypes([1, 2, "null", []]));
+//➞ ["number", "number", "string", "object"]
 
+console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
+//➞ ["string", "boolean", "boolean", "number", "number", "object", "object"]
 
-
-
-
-
-
-
+console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));
+// ➞ ["number", "string", "string", "object", "object", "boolean", "number"]
 
 
 
