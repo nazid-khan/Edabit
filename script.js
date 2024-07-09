@@ -514,23 +514,32 @@
 
 
 
-// There is an easy way to assign to array values to the nth index by using rest parameter syntax.
+// // There is an easy way to assign to array values to the nth index by using rest parameter syntax.
 
-// Change the string so that it will evaluate to head = 1 and tail = [2, 3, 4] 
-// Use the Rest element
+// // Change the string so that it will evaluate to head = 1 and tail = [2, 3, 4] 
+// // Use the Rest element
 
-const str = '[head, tail] = [1, 2, 3, 4]'
+// const str = '[head, tail] = [1, 2, 3, 4]'
 
-var [head,...tail] = [1, 2, 3, 4]
+// var [head,...tail] = [1, 2, 3, 4]
 
-console.log(head); // outputs 1
-console.log(tail); // outputs 2
-
-
+// console.log(head); // outputs 1
+// console.log(tail); // outputs 2
 
 
 
 
+
+// Create a function that takes as a parameter an array of "stringified" numbers and returns an array of numbers.
+//["1", "3", "3.6"] ➞ [1, 3, 3.6]
+
+function toNumberArray(arr) {
+	return arr.map(Number);
+}
+
+console.log(toNumberArray(["9.4", "4.2"]));   //➞ [9.4, 4.2]
+console.log(toNumberArray(["91", "44"]));     //➞ [91, 44]
+console.log(toNumberArray(["9.5", "8.8"]));   //➞ [9.5, 8.8]
 
 
 
