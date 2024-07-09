@@ -491,30 +491,40 @@
 
 
 
-// Create a function that takes an array and returns the types of values (data types) in a new array.
+// // Create a function that takes an array and returns the types of values (data types) in a new array.
 
-function arrayValuesTypes(arr) {
-	let typeOfArray = typeof(arr);
-    return typeOfArray
+// function arrayValuesTypes(arr) {
+// 	let typeOfArray = typeof(arr);
+//     return typeOfArray
     
-}
+// }
 
-console.log(arrayValuesTypes([1, 2, "null", []]));
-//➞ ["number", "number", "string", "object"]
+// console.log(arrayValuesTypes([1, 2, "null", []]));
+// //➞ ["number", "number", "string", "object"]
 
-console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
-//➞ ["string", "boolean", "boolean", "number", "number", "object", "object"]
+// console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
+// //➞ ["string", "boolean", "boolean", "number", "number", "object", "object"]
 
-console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));
-// ➞ ["number", "string", "string", "object", "object", "boolean", "number"]
-
-
+// console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));
+// // ➞ ["number", "string", "string", "object", "object", "boolean", "number"]
 
 
 
 
 
 
+
+// There is an easy way to assign to array values to the nth index by using rest parameter syntax.
+
+// Change the string so that it will evaluate to head = 1 and tail = [2, 3, 4] 
+// Use the Rest element
+
+const str = '[head, tail] = [1, 2, 3, 4]'
+
+var [head,...tail] = [1, 2, 3, 4]
+
+console.log(head); // outputs 1
+console.log(tail); // outputs 2
 
 
 
